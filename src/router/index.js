@@ -4,6 +4,7 @@ import EventList from "@/views/EventList";
 import AboutView from "@/views/AboutView";
 import EventDetail from "@/views/EventDetail";
 
+// dist folder not found
 Vue.use(VueRouter);
 
 const routes = [
