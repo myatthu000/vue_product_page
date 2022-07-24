@@ -2,6 +2,7 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import EventList from "@/views/EventList";
 import AboutView from "@/views/AboutView";
+import EventDetail from "@/views/EventDetail";
 
 Vue.use(VueRouter);
 
@@ -10,6 +11,12 @@ const routes = [
     path: "/",
     name: "event",
     component: EventList,
+  },
+  {
+    path: "/event/:id",
+    name: "EventDetail",
+    props: true,
+    component: EventDetail,
   },
   {
     path: "/about",

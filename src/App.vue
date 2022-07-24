@@ -1,8 +1,9 @@
+/* eslint-disable */
 <template>
   <div id="app">
     <nav>
-      <router-link to="/">Event</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link :to="{ name: 'event' }">Home</router-link> |
+      <router-link :to="{ name: 'about' }">About</router-link>
     </nav>
     <router-view />
   </div>
